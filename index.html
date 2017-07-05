@@ -1,49 +1,160 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+     <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sky.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <style>
+      .reveal .subtitle {
+        font-size: .6em;
+        letter-spacing: -0.05em;
+      }
+      .reveal .smaller {
+        font-size: .76em;
+      }
+      .reveal .no-dots {
+        list-style: none;
+        padding: 0;
+        margin: 1em 0 .5em 0;
+      }
+      .reveal .no-dots li {
+        margin: 0 0 .5em 0;
+        font-size: .9em;
+      }
+      .reveal .angry {
+        background-color: red;
+        color: yellow;
+        padding: 0 1em;
+        font-size: 4em;
+        font-family: 'Nova Mono', monospace;
+      }
+      .reveal .centered {
+        text-align: center;
+      }
+    </style>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>
+            Agile
+            <div class="subtitle">Software Development</div>
+          </h1>
+        </section>
+        <section>
+          <h2>A Manifesto</h2>
+          <p>
+            <div class="smaller">
+              We are uncovering better ways of
+              developing software by doing it and
+              helping others do it. Through this work
+              we have come to value:
+            </div>
+            <ul class="no-dots">
+              <li><b>Individuals and interactions</b> over processes and tools</li>
+              <li><b>Working software</b> over comprehensive documentation</li>
+              <li><b>Customer collaboration</b> over contract negotiation</li>
+              <li><b>Responding to change</b> over following a plan</li>
+            </ul>
+            <div class="smaller">
+              That is, while there is value in the
+              items on the right, we value the items on
+              the left more.
+            </div>
+          </p>
+        </section>
+        <section>
+          <h1>My history</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Methodology</th>
+                <th>Dev</th>
+                <th>Mgmt</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1999</td>
+                <td>XP</td>
+                <td class="centered">✓</td>
+                <td class="centered">✓</td>
+              </tr>
+              <tr>
+                <td>2003</td>
+                <td>FDD</td>
+                <td class="centered">✓</td>
+                <td class="centered">✓</td>
+              </tr>
+              <tr>
+                <td>2004</td>
+                <td>Scrum</td>
+                <td class="centered"></td>
+                <td class="centered">✓</td>
+              </tr>
+              <tr>
+                <td>2007</td>
+                <td>Lean with Kanban</td>
+                <td class="centered"></td>
+                <td class="centered">✓</td>
+              </tr>
+              <tr>
+                <td>2008</td>
+                <td>Scrumban</td>
+                <td class="centered"></td>
+                <td class="centered">✓</td>
+              </tr>
+              <tr>
+                <td>2012</td>
+                <td>FDD</td>
+                <td class="centered">✓</td>
+                <td class="centered">✓</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <span class="angry">POWER</span>
+        </section>
+      </div>
+    </div>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        history: true,
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
 </html>
