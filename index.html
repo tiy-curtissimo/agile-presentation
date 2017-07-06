@@ -40,6 +40,42 @@
       .reveal .centered {
         text-align: center;
       }
+      .reveal .square-of-power {
+        height: 20vw;
+        width: 25vw;
+        position: relative;
+        border: 1px solid green;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .reveal .square-of-power div {
+        position: absolute;
+        background-color: white;
+        border: 1px solid orange;
+        padding: .25em;
+        box-sizing: border-box;
+      }
+      .reveal .square-of-power div:nth-child(1) {
+        top: -.75em;
+        left: -1.7em;
+      }
+      .reveal .square-of-power div:nth-child(2) {
+        top: -.75em;
+        right: -1.4em;
+      }
+      .reveal .square-of-power div:nth-child(3) {
+        bottom: -.75em;
+        left: -1.3em;
+      }
+      .reveal .square-of-power div:nth-child(4) {
+        bottom: -.75em;
+        right: -1.7em;
+      }
+      .reveal .disused {
+        color: rgba(0, 0, 0, .1);
+      }
     </style>
 
     <!-- Printing and PDF exports -->
@@ -83,58 +119,117 @@
           </p>
         </section>
         <section>
-          <h1>My history</h1>
+          <h2>My history</h2>
           <table>
             <thead>
               <tr>
                 <th>Year</th>
                 <th>Methodology</th>
-                <th>Dev</th>
-                <th>Mgmt</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>1999</td>
                 <td>XP</td>
-                <td class="centered">✓</td>
-                <td class="centered">✓</td>
               </tr>
               <tr>
                 <td>2003</td>
                 <td>FDD</td>
-                <td class="centered">✓</td>
-                <td class="centered">✓</td>
               </tr>
               <tr>
                 <td>2004</td>
                 <td>Scrum</td>
-                <td class="centered"></td>
-                <td class="centered">✓</td>
               </tr>
               <tr>
                 <td>2007</td>
                 <td>Lean with Kanban</td>
-                <td class="centered"></td>
-                <td class="centered">✓</td>
               </tr>
               <tr>
                 <td>2008</td>
                 <td>Scrumban</td>
-                <td class="centered"></td>
-                <td class="centered">✓</td>
               </tr>
               <tr>
                 <td>2012</td>
                 <td>FDD</td>
-                <td class="centered">✓</td>
-                <td class="centered">✓</td>
               </tr>
             </tbody>
           </table>
         </section>
         <section>
           <span class="angry">POWER</span>
+        </section>
+        <section>
+          <div class="square-of-power">
+            <div>Quality</div>
+            <div>Time</div>
+            <div>Cost</div>
+            <div>Scope</div>
+            <span class="fragment fade-up">Business: 3<br>Development: 1</span>
+          </div>
+        </section>
+        <section>
+          <h2>Tenets of XP</h2>
+          <div class="two-column">
+            <ul class="no-dots">
+              <li>User stories</li>
+              <li>Planning game</li>
+              <li>Stand-up meeting</li>
+              <li>Plan using velocity</li>
+              <li>Pair programming</li>
+              <li>On-site customer</li>
+              <li>Work iteratively</li>
+            </ul>
+            <ul class="no-dots" style="margin-left: 1em;">
+              <li>Acceptance tests</li>
+              <li>Test first, test everything</li>
+              <li>Integrate often</li>
+              <li>Collective ownership</li>
+              <li>Acceptance tests</li>
+              <li>Code the simplest thing</li>
+              <li>Refactor often</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2>Tenets of Scrum</h2>
+          <div class="two-column">
+            <ul class="no-dots">
+              <li>User stories</li>
+              <li>Planning game</li>
+              <li>Stand-up meeting</li>
+              <li>Plan using velocity</li>
+              <li class="disused">Pair programming</li>
+              <li class="disused">On-site customer</li>
+              <li>Work iteratively</li>
+            </ul>
+            <ul class="no-dots" style="margin-left: 1em;">
+              <li class="disused">Acceptance tests</li>
+              <li class="disused">Test first, test everything</li>
+              <li class="disused">Integrate often</li>
+              <li class="disused">Collective ownership</li>
+              <li class="disused">Acceptance tests</li>
+              <li class="disused">Code the simplest thing</li>
+              <li class="disused">Refactor often</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2>Lean</h2>
+          <p>
+            Reduce waste
+          </p>
+        </section>
+        <section>
+          <h2>FDD</h2>
+          <p>
+            No one does FDD but me.
+          </p>
+          <p>
+            ¯\(◉◡◔)/¯
+          </p>
+        </section>
+        <section>
+          <h2>Q&amp;A</h2>
         </section>
       </div>
     </div>
